@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stegame</title>
+</head>
+<body>
+    <h1>Stegame</h1>
+    <h2>Embed Message</h2>
+    <form action="/embed" method="post" enctype="multipart/form-data">
+        <textarea name="text_message" placeholder="Enter text message"></textarea>
+        <input type="file" name="cover_image">
+        <button type="submit">Embed Message</button>
+    </form>
+
+    <h2>Extract Message</h2>
+    <form action="/extract" method="post" enctype="multipart/form-data">
+        <input type="file" name="stego_image">
+        <button type="submit">Extract Message</button>
+    </form>
+</body>
+</html>
